@@ -1,0 +1,1 @@
+if state == "free" state = "dead";
