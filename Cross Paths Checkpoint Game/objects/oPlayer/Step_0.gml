@@ -6,7 +6,7 @@ if (hascontrol)
 	_keyUp = keyboard_check_pressed(ord("W"));
 	_keyJump =  keyboard_check_pressed(vk_space);
 }
-else if state == "respawn" _keyJump =  keyboard_check_pressed(vk_space);
+else if state == "respawn" || state == "skull" _keyJump =  keyboard_check_pressed(vk_space);
 else
 {
 	_keyRight = 0;
@@ -35,33 +35,47 @@ switch state
 
 		if (canJump-- > 0) && (_keyJump)
 		{
+			instance_create_layer(x,y,"VFX",oJump);
+			audio_play_sound(snJump,1,0);
 			vsp = vspJump;
 			canJump = 0;
 		}
 		
 	if (!place_meeting(x,y+1,oSolid))
 	{
+		audio_stop_sound(snWalk);
 		if (sign(vsp) > 0) sprite_index = sPlayerDWN;
 		else sprite_index = sPlayerUP;
 	}
 	else
 	{
+		if sprite_index == sPlayerDWN audio_play_sound(snLand,1,0);
 		if (hsp == 0)
 		{
-			image_speed = 0;
+			image_speed = 1;
+			audio_stop_sound(snWalk);
 			sprite_index = sPlayer;
 		}
 		else
 		{
 			image_speed = 1;
+			if !audio_is_playing(snWalk) audio_play_sound(snWalk,1,0);
 			sprite_index = sPlayerR;	
+			trailTimer--;
+			if trailTimer <= 0
+			{
+				trailTimer = dustInterval;
+				instance_create_layer(x,y-4,"VFX",oDust);
+			}
 		}
 	}
 	break;
 	
 	case "dead":
 		hascontrol = 0;
+		vsp = 0;
 		sprite_index = sPlayerDeath;
+		image_speed = 1;
 		if image_index > 4 state = "skull";
 	break;
 	
@@ -81,6 +95,13 @@ switch state
 		{
 			state = "respawn";
 		}
+		if (_keyJump) && (!place_meeting(x,y+1,oSolid)) && (!collision_line(x,y,x,y+300,oDeath,0,0))
+		{
+			path_end();
+			image_angle = 0;
+			image_speed = 0;
+			state = "awake";
+		}
 	break;
 	
 	case "respawn":
@@ -92,11 +113,13 @@ switch state
 				image_speed = 0;
 				state = "awake";
 			}
-			if image_index > 4 state = "launch";
+			if image_index == 3 audio_play_sound(snDing,1,0);
+			if image_index > 5 state = "launch";
 	break;
 
 	case "launch":
 		image_angle = 0;
+		audio_play_sound(snLaunch,1,0);
 		repeat 10 {
 			instance_create_layer(x,y,"VFX",oParticle);	
 		}

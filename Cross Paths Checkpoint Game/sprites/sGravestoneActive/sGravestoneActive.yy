@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sGravestoneActive",
-  "bbox_bottom": 15,
+  "bbox_bottom": 13,
   "bbox_left": 5,
   "bbox_right": 27,
   "bbox_top": 0,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Level Elements",
-    "path": "folders/Level Elements.yy",
+    "name": "Gravestone stuff",
+    "path": "folders/Level Elements/Gravestone stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -47,7 +47,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
