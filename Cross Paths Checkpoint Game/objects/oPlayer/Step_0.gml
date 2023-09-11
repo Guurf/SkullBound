@@ -3,7 +3,8 @@ if (hascontrol)
 {
 	_keyRight = keyboard_check(ord("D"));
 	_keyLeft =  keyboard_check(ord("A"));
-	_keyUp = keyboard_check_pressed(ord("W"));
+	_keyUp = keyboard_check(ord("W"));
+	_keyDown = keyboard_check(ord("S"));
 	_keyJump =  keyboard_check_pressed(vk_space);
 }
 else if state == "respawn" || state == "skull" _keyJump =  keyboard_check_pressed(vk_space);
@@ -12,6 +13,8 @@ else
 	_keyRight = 0;
 	_keyLeft =  0;
 	_keyJump = 0;
+	_keyUp = 0;
+	_keyDown = 0;
 }
 
 // Work out where to move horizontally
@@ -36,7 +39,7 @@ switch state
 		if (canJump-- > 0) && (_keyJump)
 		{
 			instance_create_layer(x,y,"VFX",oJump);
-			audio_play_sound(snJump,1,0);
+			audio_play_sound(snJump,1,0,1,0,random_range(0.8,1.2));
 			vsp = vspJump;
 			canJump = 0;
 		}
@@ -74,6 +77,8 @@ switch state
 	case "dead":
 		hascontrol = 0;
 		vsp = 0;
+		hsp = 0;
+		haddsp = 0;
 		sprite_index = sPlayerDeath;
 		image_speed = 1;
 		if image_index > 4 state = "skull";
@@ -84,6 +89,7 @@ switch state
 		canJump = 0;
 		trailActive = 1;
 		var closeGrave = instance_nearest(x,y,oGravestone);
+		if !instance_exists(oGravestone) closeGrave = instance_nearest(x,y,oGrave);
 		dir = point_direction(oPlayer.x, oPlayer.y, closeGrave.x, closeGrave.y);
 		image_angle = dir-90;
 		show_debug_message(image_angle);
@@ -107,7 +113,7 @@ switch state
 	case "respawn":
 			path_end();
 			sprite_index = sPlayerRespawn;
-			if (_keyJump) 
+			if (_keyJump) && (!collision_line(x,y,x,y+300,oDeath,0,0))
 			{
 				image_angle = 0;
 				image_speed = 0;
@@ -119,7 +125,7 @@ switch state
 
 	case "launch":
 		image_angle = 0;
-		audio_play_sound(snLaunch,1,0);
+		audio_play_sound(snLaunch,1,0,);
 		repeat 10 {
 			instance_create_layer(x,y,"VFX",oParticle);	
 		}

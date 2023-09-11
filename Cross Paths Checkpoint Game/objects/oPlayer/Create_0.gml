@@ -15,3 +15,5 @@ trailActive = 0;
 trailInterval = 3;
 dustInterval = 10;
 trailTimer = trailInterval;
+
+_keyDown = 0;

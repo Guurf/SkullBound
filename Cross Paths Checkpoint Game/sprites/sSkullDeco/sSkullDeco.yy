@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Ability",
-    "path": "folders/Player/Ability.yy",
+    "name": "Tiles",
+    "path": "folders/Tiles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

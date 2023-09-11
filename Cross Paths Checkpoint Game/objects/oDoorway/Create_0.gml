@@ -1,2 +1,2 @@
 image_speed = 0;
-roomTarget = rLevel1;
+roomTarget = room+1;
