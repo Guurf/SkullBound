@@ -44,6 +44,26 @@ switch state
 			canJump = 0;
 		}
 		
+		//Slime Check
+		if (instance_exists(oSlime))
+		{
+			var closeSlime = instance_nearest(x,y,oSlime);
+			if (place_meeting(x,y,closeSlime)) && y < closeSlime.y-10
+			{
+				closeSlime.state = "dead";
+				instance_create_layer(x,y,"VFX",oJump);
+				audio_play_sound(snStab,1,0,1,0,random_range(0.8,1.2));
+				vsp = vspJump;
+				canJump = 0;
+			}
+			else if (place_meeting(x,y,closeSlime)) && (closeSlime.state == "free" || closeSlime.state == "slam")
+			{
+				audio_play_sound(snDeath,1,0);
+				state = "dead";	
+			}
+		}
+		
+		
 	if (!place_meeting(x,y+1,oSolid))
 	{
 		audio_stop_sound(snWalk);

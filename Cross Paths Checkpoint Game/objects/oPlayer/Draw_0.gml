@@ -7,5 +7,4 @@ if place_meeting(x,y,oDoorway)
 {
 	draw_sprite(sUpArrow,0,x,y-18);
 }
-
 draw_self();
