@@ -48,7 +48,7 @@ switch state
 		if (instance_exists(oSlime))
 		{
 			var closeSlime = instance_nearest(x,y,oSlime);
-			if (place_meeting(x,y,closeSlime)) && y < closeSlime.y-10
+			if (place_meeting(x,y,closeSlime)) && y < closeSlime.y-5 && closeSlime.state == "free"
 			{
 				closeSlime.state = "dead";
 				instance_create_layer(x,y,"VFX",oJump);
@@ -121,7 +121,7 @@ switch state
 		{
 			state = "respawn";
 		}
-		if (_keyJump) && (!place_meeting(x,y+1,oSolid)) && (!collision_line(x,y,x,y+300,oDeath,0,0))
+		if (_keyJump) && (!place_meeting(x,y+1,oSolid)) && (!collision_line(x,y,x,y+150,oDeath,0,0))
 		{
 			path_end();
 			image_angle = 0;

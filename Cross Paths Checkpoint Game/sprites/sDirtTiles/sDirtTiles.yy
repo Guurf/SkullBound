@@ -4,7 +4,7 @@
   "name": "sDirtTiles",
   "bbox_bottom": 47,
   "bbox_left": 16,
-  "bbox_right": 95,
+  "bbox_right": 126,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
