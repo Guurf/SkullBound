@@ -8,3 +8,6 @@ vspJump = -5; //jump speed
 canJump = 0; //are we touching the ground
 spd = 10; //speed of checkpoint exit
 state = "free";
+
+trailInterval = 5;
+trailTimer = trailInterval;

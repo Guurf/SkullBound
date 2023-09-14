@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sBackdrop",
-  "bbox_bottom": 359,
+  "bbox_bottom": 499,
   "bbox_left": 0,
   "bbox_right": 639,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 40,
   "gridY": 40,
-  "height": 360,
+  "height": 500,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"46bed39d-4822-4687-9a0f-e9e2a4ec767e","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
@@ -61,7 +61,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 320,
-    "yorigin": 180,
+    "yorigin": 250,
   },
   "swatchColours": [
     4278190335,

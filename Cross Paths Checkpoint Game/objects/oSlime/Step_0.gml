@@ -41,6 +41,12 @@ switch state
 	
 	case "bit":
 		vsp = 0;
+		trailTimer--;
+			if trailTimer <= 0
+			{
+				trailTimer = trailInterval;
+				instance_create_layer(x,y,"VFX",oSlimeTrail);
+			}
 		sprite_index = sSlimeBit;
 		dir = point_direction(x, y, oPlayer.x, oPlayer.y-56);
 		image_angle = dir-90;
@@ -66,7 +72,11 @@ switch state
 		{
 			vsp = 3;
 			image_speed = 0;
-			if (place_meeting(x, y + vsp, oSolid)) state = "free";
+			if (place_meeting(x, y + vsp, oSolid)) 
+			{
+				instance_create_layer(x,y,"VFX",oJump,{image_xscale : 1.5});
+				state = "free";
+			}
 		}
 	break;
 	
