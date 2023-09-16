@@ -164,9 +164,10 @@ switch state
 	break;
 }
 
-if _keyUp && place_meeting(x,y,oDoorway)
+if _keyUp && place_meeting(x,y,oDoorway) && !instance_exists(oTransition)
 {
-	room_goto(oDoorway.roomTarget);	
+	instance_create_layer(other.x,other.y,"Dev",oTransition);
+	//room_goto(oDoorway.roomTarget);	
 }
 
 
