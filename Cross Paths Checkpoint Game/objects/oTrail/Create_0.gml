@@ -4,5 +4,5 @@ image_xscale = scale;
 image_yscale = scale;
 image_angle = irandom_range(0,360);
 image_speed = 0;
-if oPlayer.state == "free" image_index = 1;
+if room != rLevelSelect && oPlayer.state == "free" image_index = 1;
 else image_index = 0;

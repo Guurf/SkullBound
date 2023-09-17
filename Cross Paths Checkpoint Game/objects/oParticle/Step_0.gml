@@ -1,6 +1,7 @@
 timer--;
 if timer <= 0
 {
+	speed = 1;
 	timer = 0;
 	scale-= 0.05;
 	gravity = 0.1;

@@ -1,0 +1,1 @@
+levelChoice = instance_nearest(oFollow.x, oFollow.y, oThumbnail);

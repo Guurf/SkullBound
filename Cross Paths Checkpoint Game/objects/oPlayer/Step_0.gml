@@ -34,7 +34,7 @@ switch state
 		hascontrol = 1;	
 		// Work out where to move vertically
 		vsp += grv;
-		if (vsp > 10) vsp = 10; //Terminal Velocity
+		if (vsp > 6) vsp = 6; //Terminal Velocity
 
 		if (canJump-- > 0) && (_keyJump)
 		{
