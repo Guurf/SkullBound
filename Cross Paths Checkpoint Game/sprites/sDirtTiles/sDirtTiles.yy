@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sDirtTiles",
-  "bbox_bottom": 47,
+  "bbox_bottom": 52,
   "bbox_left": 16,
   "bbox_right": 126,
   "bbox_top": 0,
