@@ -47,8 +47,12 @@ else if room == rLevelSelect
 	{
 		titleY = y;
 		nameY = y;	
-		y = lerp(y,-64,0.08);
-		if bbox_bottom <= 0 room_goto(roomTarget);
+		y = lerp(y,-80,0.08);
+		if bbox_bottom <= -2 
+		{
+			room_goto(roomTarget);
+			instance_create_layer(x,y,"Dev",oScreenTrans);
+		}
 	}
 }
 else if room == rMenu

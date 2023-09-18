@@ -121,7 +121,7 @@ switch state
 		{
 			state = "respawn";
 		}
-		if (_keyJump) && (!place_meeting(x,y+1,oSolid)) && (!collision_line(x,y,x,y+150,oDeath,0,0))
+		if (keyboard_check(vk_space)) && (!place_meeting(x,y+1,oSolid)) && (!collision_line(x,y,x,y+150,oDeath,0,0))
 		{
 			path_end();
 			image_angle = 0;

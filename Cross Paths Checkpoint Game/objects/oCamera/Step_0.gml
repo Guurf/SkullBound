@@ -5,6 +5,7 @@ if (instance_exists(follow))
 {
 	xTo = follow.x;	
 	yTo = follow.y;
+	if room == r8DropDead yTo = follow.y+20;
 }
 
 //Update object position
