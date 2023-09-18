@@ -59,7 +59,11 @@ else if room == rMenu
 {
 	oFollow.control = 0;
 	image_alpha = lerp(image_alpha,-1,0.08);
-	if image_alpha <= 0 room_goto(roomTarget);
+	if image_alpha <= 0 
+	{
+		room_goto(roomTarget);
+		instance_create_layer(x,y,"Dev",oScreenTrans);
+	}
 }
 image_xscale = scale;
 image_yscale = scale;

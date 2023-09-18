@@ -164,12 +164,15 @@ switch state
 	break;
 }
 
+//Doorway
 if _keyUp && place_meeting(x,y,oDoorway) && !instance_exists(oTransition)
 {
 	instance_create_layer(other.x,other.y,"Dev",oTransition);
 	//room_goto(oDoorway.roomTarget);	
 }
 
+//Transition Check
+if instance_exists(oScreenTrans) hascontrol = 0;
 
 //Trail
 if trailActive

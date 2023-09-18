@@ -20,7 +20,8 @@ if room == rLevelSelect
 		x -= 112;	
 	}
 
-	if x < 320 x = 320;
+	if x < 208 x = 208;
+	else if x > 1328 x = 1328;
 }
 else if room == rMenu
 {

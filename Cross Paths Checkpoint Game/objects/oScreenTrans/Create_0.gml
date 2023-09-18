@@ -5,4 +5,10 @@ show_debug_message(sprite_get_height(transSprite));
 if file_exists(transSprite) file_delete(transSprite);
 
 spriteScale = 0.3;
+spriteZoom = 0.8;
+if window_get_width() == 640 
+{
+	spriteScale = 1;
+	spriteZoom = 2.5;
+}
 spriteAlpha = 1;
