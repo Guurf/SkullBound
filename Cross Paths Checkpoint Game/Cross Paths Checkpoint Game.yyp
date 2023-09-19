@@ -54,6 +54,7 @@
     {"id":{"name":"sThumbnail2","path":"sprites/sThumbnail2/sThumbnail2.yy",},},
     {"id":{"name":"sTransition","path":"sprites/sTransition/sTransition.yy",},},
     {"id":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},},
+    {"id":{"name":"sQuit","path":"sprites/sQuit/sQuit.yy",},},
     {"id":{"name":"sPlayerUP","path":"sprites/sPlayerUP/sPlayerUP.yy",},},
     {"id":{"name":"sPlatform","path":"sprites/sPlatform/sPlatform.yy",},},
     {"id":{"name":"sRedSlimeBit","path":"sprites/sRedSlimeBit/sRedSlimeBit.yy",},},

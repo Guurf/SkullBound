@@ -33,6 +33,7 @@
     {"name":"sThumbnail2","order":3,"path":"sprites/sThumbnail2/sThumbnail2.yy",},
     {"name":"sTransition","order":11,"path":"sprites/sTransition/sTransition.yy",},
     {"name":"oTutorial","order":3,"path":"objects/oTutorial/oTutorial.yy",},
+    {"name":"sQuit","order":22,"path":"sprites/sQuit/sQuit.yy",},
     {"name":"sPlatform","order":2,"path":"sprites/sPlatform/sPlatform.yy",},
     {"name":"sRedSlimeBit","order":4,"path":"sprites/sRedSlimeBit/sRedSlimeBit.yy",},
     {"name":"snLand","order":3,"path":"sounds/snLand/snLand.yy",},
