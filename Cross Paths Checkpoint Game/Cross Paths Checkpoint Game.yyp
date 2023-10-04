@@ -69,6 +69,7 @@
     {"id":{"name":"r6SixFeetUnder","path":"rooms/r6SixFeetUnder/r6SixFeetUnder.yy",},},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},},
     {"id":{"name":"snJump","path":"sounds/snJump/snJump.yy",},},
+    {"id":{"name":"rEnding","path":"rooms/rEnding/rEnding.yy",},},
     {"id":{"name":"oSlimeTrail","path":"objects/oSlimeTrail/oSlimeTrail.yy",},},
     {"id":{"name":"sSlimeSlam","path":"sprites/sSlimeSlam/sSlimeSlam.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
@@ -174,6 +175,7 @@
     {"roomId":{"name":"r10Slimemate","path":"rooms/r10Slimemate/r10Slimemate.yy",},},
     {"roomId":{"name":"r0TheGauntlet","path":"rooms/r0TheGauntlet/r0TheGauntlet.yy",},},
     {"roomId":{"name":"rDevZone","path":"rooms/rDevZone/rDevZone.yy",},},
+    {"roomId":{"name":"rEnding","path":"rooms/rEnding/rEnding.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

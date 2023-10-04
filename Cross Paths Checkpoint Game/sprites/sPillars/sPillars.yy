@@ -4,7 +4,7 @@
   "name": "sPillars",
   "bbox_bottom": 47,
   "bbox_left": 6,
-  "bbox_right": 45,
+  "bbox_right": 56,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,

@@ -8,10 +8,10 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_1A3C73E1_2","path":"rooms/rMenu/rMenu.yy",},
-    {"name":"inst_3D56E00C","path":"rooms/rMenu/rMenu.yy",},
-    {"name":"inst_292F95A9","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_2A6DFF7B","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_5F9B25B2","path":"rooms/rMenu/rMenu.yy",},
+    {"name":"inst_3D56E00C","path":"rooms/rMenu/rMenu.yy",},
+    {"name":"inst_292F95A9","path":"rooms/rMenu/rMenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -28,13 +28,13 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Choices","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D56E00C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"roomTarget","path":"objects/oThumbnail/oThumbnail.yy",},"value":"rLevelSelect",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"level","path":"objects/oThumbnail/oThumbnail.yy",},"value":"",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"level","path":"objects/oThumbnail/oThumbnail.yy",},"value":"-1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"name","path":"objects/oThumbnail/oThumbnail.yy",},"value":"",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"sprite_index","path":"objects/oThumbnail/oThumbnail.yy",},"value":"sLevelSelect",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":240.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_292F95A9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"name","path":"objects/oThumbnail/oThumbnail.yy",},"value":"",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"level","path":"objects/oThumbnail/oThumbnail.yy",},"value":"",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"level","path":"objects/oThumbnail/oThumbnail.yy",},"value":"-1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"roomTarget","path":"objects/oThumbnail/oThumbnail.yy",},"value":"r1GraveMistake",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oThumbnail","path":"objects/oThumbnail/oThumbnail.yy",},"propertyId":{"name":"sprite_index","path":"objects/oThumbnail/oThumbnail.yy",},"value":"sPlay",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":240.0,},
